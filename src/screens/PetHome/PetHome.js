@@ -56,7 +56,7 @@ class PetHome extends Component {
 
 
                         <FlatList
-                            style={{ height: 120,marginTop: 20,zIndex: 0 }}
+                            style={{ height: 120,marginTop: 20,zIndex: 0,alignSelf:"center" }}
                             horizontal={true}
                             extraData={this.state}
                             data={this.state.aList}
@@ -74,7 +74,7 @@ class PetHome extends Component {
                         </View>
 
                         <FlatList
-                            style={{ width: "100%",height: "100%" }}
+                            style={{ width: "100%",height: "100%",alignSelf:"center" }}
                             numColumns={2}
                             extraData={this.state}
                             data={this.state.list}
@@ -95,7 +95,7 @@ class PetHome extends Component {
                 style={{
                     width: 150,height: 65,marginTop: 25,
                     backgroundColor: item.isselect ? "#7c4dff" :"#fff",marginEnd: 10,borderRadius: 5,
-                    justifyContent: "center"
+                    justifyContent: "center",alignSelf:"center"
                 }}>
 
                 <TouchableOpacity
@@ -133,7 +133,7 @@ class PetHome extends Component {
             <View
                 style={{
                     height: 160,marginTop: 5,flex: 1,
-                    backgroundColor: "#fff",marginEnd: 10,borderRadius: 5,
+                    backgroundColor: "#fff",marginEnd: 5,borderRadius: 5,
                     justifyContent: "center"
                 }}>
 

@@ -22,13 +22,13 @@ class PetDetail extends Component {
 
 
                     <TouchableOpacity
-                        onPress={(e) => {
-                            console.log("called",e)
+                        onPress={() => {
+                        
                             this.props.navigation.goBack();
                         }}
                         style={{
-                            width: 32,
-                            height: 32,paddingTop: 16
+                            width: 66,
+                            height: 66,paddingTop: 16
                         }}>
                         <Image
                             style={{
