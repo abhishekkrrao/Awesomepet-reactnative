@@ -1,6 +1,8 @@
 import React,{ Component } from "react";
-import { loading,login,signup,profile,job,jobdetail,jobhome,
-    postjob,OtpPage,Test,PetHome,PetDetail } from '../screens'
+import {
+    loading,login,signup,profile,job,jobdetail,jobhome,
+    postjob,OtpPage,Test,PetHome,PetDetail,Movie,VideoPlayer
+} from '../screens'
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import assets from '../assets/index'
@@ -76,10 +78,12 @@ const AppNavigator = createStackNavigator({
     jobhome: { screen: jobhome },
     postjob: { screen: postjob },
     Tabs: { screen: TabNavigator },
-    OtpPage : {screen:OtpPage},
-    Test:{screen:Test},
-    PetHome:{screen:PetHome},
-    PetDetail:{screen:PetDetail},
+    OtpPage: { screen: OtpPage },
+    Test: { screen: Test },
+    PetHome: { screen: PetHome },
+    PetDetail: { screen: PetDetail },
+    Movie: { screen: Movie },
+    VideoPlayer: { screen: VideoPlayer },
 },{
     headerMode: 'none'
 });
@@ -91,7 +95,7 @@ export default class navigator extends React.Component {
     }
     componentDidMount() {
         Platform.OS == "android" ? StatusBar.setBackgroundColor("#005e39") : "",
-            setTimeout(() => { this.lounchApp('PetHome'); },2000);
+            setTimeout(() => { this.lounchApp('Movie'); },2000);
     }
 
     lounchApp = (initialRouteName) => {

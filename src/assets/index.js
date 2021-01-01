@@ -21,5 +21,24 @@ export default {
         like: require('./pet/like.png'),
         unlike: require('./pet/unlike.png'),
         back: require('./pet/back.png')
+    },
+    movie:{
+        actor1: require('./movie/actor1.jpg'),
+        actor2: require('./movie/actor2.jpg'),
+        actor3: require('./movie/actor3.jpg'),
+        actor4: require('./movie/actor4.jpg'),
+        actor5: require('./movie/actor5.jpg'),
+        c6: require('./movie/apokolips_war.jpg'),
+        c7: require('./movie/bad_boys2.jpg'),
+        c8: require('./movie/bird_prey.jpg'),
+        c9: require('./movie/jojo_rabbit.jpg'),
+        c10: require('./movie/kissing_both.jpg'),
+        c11: require('./movie/mision_rescate.jpg'),
+        c12: require('./movie/onward.jpg'),
+        c13: require('./movie/qr_code.png'),
+        c14: require('./movie/rambo.jpg'),
+        c15: require('./movie/red_son.jpg'),
+        c16: require('./movie/sonic.jpg'),
+        c17: require('./movie/star_wars.jpg'),
     }
 }

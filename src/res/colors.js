@@ -1,5 +1,4 @@
 'use strict'
-
 export default {
     shadowColor: 'darkgrey',
     jpBlue: 'rgb(206, 228, 245)',
